@@ -16,15 +16,15 @@ def test_user_list(user_api):
     print(response)
     assert status_code == 200
 
-# def test_get_user(user_api):
-#     user_id = 2
-#     status_code, response = user_api.get_user(user_id)
-#     print(response)
-#     assert status_code == 200
+def test_get_user(user_api):
+    user_id = 2
+    status_code, response = user_api.get_user(user_id)
+    print(response)
+    assert status_code == 200
 
-# def test_update_user(user_api):
-#     user_id = 2
-#     user_data = {"name": "Admin1"}
-#     status_code, response = user_api.update_user(user_id, user_data)
-#     print(response)
-#     assert status_code == 200
+def test_update_user(user_api):
+    user_id = 2
+    user_data = {"name": "Admin1"}
+    status_code, response = user_api.update_user(user_id, user_data)
+    print(response)
+    assert status_code == 200
